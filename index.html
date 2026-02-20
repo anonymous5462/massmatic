@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberShield Academy — Ethical Hacking Masterclass 2025</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <a href="https://abcss.org/" target="_blank">
+        <img src="left-logo.png" alt="">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#who">Eligibility</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+    </ul>
+    <a href="#register" class="nav-register">Register Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-lines">
+      <div class="h-line"></div>
+      <div class="h-line"></div>
+      <div class="h-line"></div>
+      <div class="v-line"></div>
+      <div class="v-line"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">Live Online Masterclass Ethical Hacking &amp; Cybersecurity</div>
+      <h1>
+        <span class="t1">Master the Art of</span>
+        <span class="t2">Ethical Hacking</span>
+        <span class="t3">Akhil Bhartiya Cyber Suraksha Sangathan MASTERCLASS 2026</span>
+      </h1>
+      <p class="hero-desc">A transformative one-day intensive — covering offensive security, real-world exploitation,
+        and professional tools. Designed for all skill levels by Cybersecurity Experts. Walk out with a certificate, tools,
+        and a career roadmap.</p>
+
+      <div class="event-meta">
+        <div class="meta-cell">
+          <div class="meta-lbl"> Date</div>
+          <div class="meta-val accent">15 MARCH 2025</div>
+        </div>
+        <div class="meta-cell">
+          <div class="meta-lbl"> Time</div>
+          <div class="meta-val">10:00 AM — 4:00 PM (ist)</div>
+        </div>
+        <div class="meta-cell">
+          <div class="meta-lbl"> Mode</div>
+          <div class="meta-val">LIVE ONLINE</div>
+        </div>
+        <div class="meta-cell">
+          <div class="meta-lbl"> Investment</div>
+          <div class="meta-val gold">₹199 ONLY</div>
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#register" class="btn-hero primary">⚡ Secure Your Seat</a>
+        <a href="#topics" class="btn-hero secondary">View Full Curriculum →</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hex-ring"></div>
+      <div class="hex-ring"></div>
+      <div class="hex-ring"></div>
+      <div class="hex-center">🔐</div>
+    </div>
+
+    <div class="countdown-wrap">
+      <div class="countdown-label"> Event Starts In</div>
+      <div class="countdown-units">
+        <div class="c-unit"><span class="c-num" id="cd-days">00 </span>
+          <div class="c-label">Days</div>
+        </div>
+        <div class="c-sep">:</div>
+        <div class="c-unit"><span class="c-num" id="cd-hrs">00</span>
+          <div class="c-label">Hrs</div>
+        </div>
+        <div class="c-sep">:</div>
+        <div class="c-unit"><span class="c-num" id="cd-min">00</span>
+          <div class="c-label">Min</div>
+        </div>
+        <div class="c-sep">:</div>
+        <div class="c-unit"><span class="c-num" id="cd-sec">00</span>
+          <div class="c-label">Sec</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"></div>
+
+  <!-- HIGHLIGHTS -->
+  <section class="section reveal" id="highlights">
+    <div class="section-inner">
+      <!-- <div class="s-label">// Why Attend This Webinar</div> -->
+      <div class="s-title">Webinar <span>Highlights</span></div>
+      <div class="highlights-grid">
+        <div class="hl-card">
+          <div class="hl-num">01</div>
+          <div class="hl-icon-wrap">🏆</div>
+          <div class="hl-title">Certification</div>
+          <div class="hl-desc">Receive a professionally designed, verifiable Certificate of Completion — recognized by
+            Cybersecurity Professionals and shareable on LinkedIn to boost your credibility instantly.</div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-num">02</div>
+          <div class="hl-icon-wrap">🛠️</div>
+          <div class="hl-title">Paid Professional Tools</div>
+          <div class="hl-desc">Gain access to premium, industry-standard hacking and security tools -fully included in your one-time registration fee.</div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-num">03</div>
+          <div class="hl-icon-wrap">⚡</div>
+          <div class="hl-title">Theory + Practical Combo</div>
+          <div class="hl-desc">Deep conceptual learning fused with hands-on execution. Every concept is demonstrated
+            live and replicated in real time — not just slides and theory.</div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-num">04</div>
+          <div class="hl-icon-wrap">💻</div>
+          <div class="hl-title">Live Hacking Practicals</div>
+          <div class="hl-desc">Watch real-time hacking on live lab environments — witness vulnerabilities being
+            discovered and exploited in a fully controlled and legal setting.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"></div>
+
+  <!-- TOPICS -->
+  <section class="section topics-section reveal" id="topics">
+    <div class="section-inner">
+      <!-- <div class="s-label"> Full Curriculum</div> -->
+      <div class="s-title">Topics <span>Covered</span></div>
+      <div class="topics-two-col">
+        <div class="topic-row">
+          <div class="topic-idx">01</div>
+          <div>
+            <div class="topic-title">Introduction to Ethical Hacking</div>
+            <div class="topic-sub">Legal frameworks, hacker mindset, types of hackers &amp; penetration testing
+              fundamentals</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-idx">02</div>
+          <div>
+            <div class="topic-title">Networking &amp; Protocols</div>
+            <div class="topic-sub">TCP/IP, DNS, HTTP/S, OSI model — how the internet works under the hood</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-idx">03</div>
+          <div>
+            <div class="topic-title">Reconnaissance &amp; OSINT</div>
+            <div class="topic-sub">Shodan, Google Dorks, passive &amp; active information gathering techniques</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-idx">04</div>
+          <div>
+            <div class="topic-title">Scanning &amp; Enumeration</div>
+            <div class="topic-sub">Nmap, port scanning, vulnerability scanning, service enumeration in practice</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-idx">05</div>
+          <div>
+            <div class="topic-title">Web Application Security</div>
+            <div class="topic-sub">OWASP Top 10 — SQL Injection, XSS, CSRF, broken authentication and more</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-idx">06</div>
+          <div>
+            <div class="topic-title">System &amp; Network Exploitation</div>
+            <div class="topic-sub">Metasploit framework, privilege escalation, post-exploitation &amp; persistence</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-idx">07</div>
+          <div>
+            <div class="topic-title">Password Cracking &amp; Attacks</div>
+            <div class="topic-sub">Brute force, dictionary attacks, rainbow tables, and credential stuffing</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-idx">08</div>
+          <div>
+            <div class="topic-title">Social Engineering</div>
+            <div class="topic-sub">Phishing, vishing, pretexting — the human element of every cyber attack</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-idx">09</div>
+          <div>
+            <div class="topic-title">Wireless Network Hacking</div>
+            <div class="topic-sub">WPA2 cracking, Evil Twin attacks, securing wireless infrastructure</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <div class="topic-idx">10</div>
+          <div>
+            <div class="topic-title">Cybersecurity Career Roadmap</div>
+            <div class="topic-sub">CEH, OSCP, CompTIA paths, job roles, salary ranges &amp; portfolio building</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"></div>
+
+  <!-- WHO -->
+  <section class="section reveal" id="who">
+    <div class="section-inner">
+      <!-- <div class="s-label"> Eligibility Criteria</div> -->
+      <div class="s-title">Who Can <span>Attend</span></div>
+      <div class="who-grid">
+        <div class="who-card"><span class="who-emoji">💼</span>
+          <div class="who-title">IT Professionals</div>
+          <div class="who-sub">Developers, Cybersecurity Analist, Network Engineers</div>
+        </div>
+        <div class="who-card"><span class="who-emoji">📖</span>
+          <div class="who-title">School Students</div>
+          <div class="who-sub">Classes 9th to 12th </div>
+        </div>
+        <div class="who-card"><span class="who-emoji">🎓</span>
+          <div class="who-title">College Students</div>
+          <div class="who-sub">Any stream — CS, BCA, BBA, B.Com &amp; more</div>
+        </div>
+        <div class="who-card"><span class="who-emoji">🏢</span>
+          <div class="who-title">Business Owners</div>
+          <div class="who-sub">Protect your company from digital threats</div>
+        </div>
+        <div class="who-card"><span class="who-emoji">🌐</span>
+          <div class="who-title">Non-Technical</div>
+          <div class="who-sub">Zero prior experience required — all welcome</div>
+        </div>
+      </div>
+      <p style="margin-top:32px;font-size:0.9rem;color:var(--muted2);max-width:600px;line-height:1.8;"><span
+          style="color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:0.75rem;"> NOTE</span><br>No
+        prior technical knowledge required. The curriculum is structured progressively — from absolute basics to
+        advanced techniques — ensuring every participant learns and grows.</p>
+    </div>
+  </section>
+
+  <div class="sec-divider"></div>
+
+  <!-- BENEFITS -->
+  <section class="section benefits-section reveal" id="benefits">
+    <div class="section-inner">
+      <!-- <div class="s-label"> Post-Webinar Value</div> -->
+      <div class="s-title">What You <span>Get</span></div>
+      <div class="benefits-grid">
+        <div class="benefit-card"><span class="benefit-icon">🏅</span>
+          <div class="benefit-title">Certificate of Completion</div>
+          <div class="benefit-desc">A professionally designed, digitally verifiable certificate recognized in the
+            cybersecurity community — shareable directly on LinkedIn, resumes, and professional portfolios.</div><span
+            class="benefit-tag">✓ Verifiable &amp; Shareable</span>
+        </div>
+        <div class="benefit-card"><span class="benefit-icon">📚</span>
+          <div class="benefit-title">Comprehensive Study Materials</div>
+          <div class="benefit-desc">Lifetime access to curated study notes, reference guides, command cheat sheets, tool
+            documentation, and structured reading lists covering every topic — yours to keep forever.</div><span
+            class="benefit-tag">✓ Lifetime Access</span>
+        </div>
+        <div class="benefit-card"><span class="benefit-icon">🖥️</span>
+          <div class="benefit-title">Hands-On Lab Access</div>
+          <div class="benefit-desc">Practice in realistic simulated environments using intentionally vulnerable lab
+            machines. Execute real attacks, find real vulnerabilities — in a safe, fully legal space.</div><span
+            class="benefit-tag">✓ Real Lab Environments</span>
+        </div>
+        <div class="benefit-card"><span class="benefit-icon">🚀</span>
+          <div class="benefit-title">Career Growth Guide</div>
+          <div class="benefit-desc">A comprehensive roadmap for launching or accelerating a cybersecurity career —
+            certifications, job boards, portfolio-building strategies, networking tips, and interview preparation.</div>
+          <span class="benefit-tag">✓ Industry Roadmap</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sec-divider"></div>
+
+  <!-- REGISTER -->
+  <section class="register-section reveal" id="register">
+    <div class="register-bg"></div>
+    <div class="register-inner">
+      <div class="s-label" style="text-align:center"> Secure Your Spot Today</div>
+      <div class="price-badge">
+        <span class="price-old">₹1999</span>
+        <span class="price-arrow">→</span>
+        <span class="price-new">₹199</span>
+        <span class="price-only">EARLY BIRD PRICE</span>
+      </div>
+      <h2 class="register-title">Ready to <span>Elevate</span> Your Skills?</h2>
+      <p class="register-sub">Fill in the form below to secure your seat. Our team will confirm your registration within
+        24 hours via email.</p>
+
+      <div class="register-box">
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-fields">
+            <div class="field-group">
+              <label class="field-label">Full Name *</label>
+              <input class="field-input" type="text" placeholder="Enter your full name" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label">Contact Number *</label>
+              <input class="field-input" type="tel" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label">Email Address *</label>
+              <input class="field-input" type="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label">Profession / Role *</label>
+              <select class="field-select" required>
+                <option value="" disabled selected>Select your profession</option>
+                <option>IT Professional</option>
+                <option>School Student (9–12)</option>
+                <option>College Student</option>
+                <option>Business Owner</option>
+                <option>Non-Technical Professional</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label class="field-label">Highest Education *</label>
+              <select class="field-select" required>
+                <option value="" disabled selected>Select qualification</option>
+                <option>High School (10th)</option>
+                <option>Higher Secondary (12th)</option>
+                <option>Diploma</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+                <option>PhD / Doctorate</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label class="field-label">City / State *</label>
+              <input class="field-input" type="text" placeholder="Your city and state" required>
+            </div>
+            <div class="field-group full">
+              <label class="field-label">Full Address</label>
+              <input class="field-input" type="text" placeholder="House/Flat No., Street, Area, PIN Code">
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">⚡ REGISTER &amp; CONFIRM MY SEAT — ₹199</button>
+        </form>
+        <p class="form-note">🔒 Your data is encrypted and used only for webinar communication. We never sell or share
+          your information.</p>
+        <div class="gform-link">Prefer Google Forms? &nbsp;<a href="https://forms.google.com" target="_blank">Click here
+            to register via Google Form →</a></div>
+      </div>
+      <div class="seats-warning">▲ Limited Seats Available — Register Before They Fill Up</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <a href="https://abcss.org/" target="_blank">ABCSS.ORG</a>
+    </div>
+    <div class="footer-copy">Copyright© 2018 Akhil Bhartiya Cyber Suraksha Sangathan (Regd.)</div>
+    <a href="mailto:info@cybershield.academy" class="footer-contact">info@cybershield.academy</a>
+  </footer>
+
+  <script>
+    // Custom Cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; });
+    function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(animRing); }
+    animRing();
+    document.querySelectorAll('a,button,.hl-card,.who-card,.benefit-card,.topic-row').forEach(el => {
+      el.addEventListener('mouseenter', () => { ring.style.transform = 'translate(-50%,-50%) scale(1.8)'; ring.style.borderColor = 'rgba(0,212,255,0.8)'; });
+      el.addEventListener('mouseleave', () => { ring.style.transform = 'translate(-50%,-50%) scale(1)'; ring.style.borderColor = 'rgba(0,212,255,0.5)'; });
+    });
+
+    // Particles
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H;
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    resize(); window.addEventListener('resize', resize);
+    const pts = [];
+    for (let i = 0; i < 90; i++) { pts.push({ x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight, vx: (Math.random() - .5) * .4, vy: (Math.random() - .5) * .4, r: Math.random() * 1.5 + .5, a: Math.random() * .4 + .1, c: Math.random() > .7 ? '0,102,255' : '0,212,255' }); }
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      pts.forEach(p => {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0) p.x = W; if (p.x > W) p.x = 0; if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${p.c},${p.a})`; ctx.fill();
+      });
+      for (let i = 0; i < pts.length; i++) {
+        for (let j = i + 1; j < pts.length; j++) {
+          const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y, d = Math.sqrt(dx * dx + dy * dy);
+          if (d < 110) { ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y); ctx.strokeStyle = `rgba(0,180,255,${.05 * (1 - d / 110)})`; ctx.lineWidth = .5; ctx.stroke(); }
+        }
+      }
+      requestAnimationFrame(draw);
+    }
+    draw();
+
+    // // Countdown
+    // function updateCD() {
+    //   const t = new Date('2025-03-15T10:00:00+05:30').getTime();
+    //   let d = Math.max(0, t - Date.now());
+    //   const days = Math.floor(d / 86400000); d -= days * 86400000;
+    //   const hrs = Math.floor(d / 3600000); d -= hrs * 3600000;
+    //   const min = Math.floor(d / 60000); d -= min * 60000;
+    //   const sec = Math.floor(d / 1000);
+    //   document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+    //   document.getElementById('cd-hrs').textContent = String(hrs).padStart(2, '0');
+    //   document.getElementById('cd-min').textContent = String(min).padStart(2, '0');
+    //   document.getElementById('cd-sec').textContent = String(sec).padStart(2, '0');
+    // }
+    // updateCD(); setInterval(updateCD, 1000);
+
+    // Set duration (28 days 5 hours 30 minutes 15 seconds)
+const duration =
+  (28 * 24 * 60 * 60 * 1000) +   // 28 days
+  (5 * 60 * 60 * 1000) +         // 5 hours
+  (30 * 60 * 1000) +             // 30 minutes
+  (15 * 1000);                   // 15 seconds
+
+// Set target time once
+const targetTime = Date.now() + duration;
+
+// Countdown
+function updateCD() {
+  let d = Math.max(0, targetTime - Date.now());
+
+  const days = Math.floor(d / 86400000); 
+  d -= days * 86400000;
+
+  const hrs = Math.floor(d / 3600000); 
+  d -= hrs * 3600000;
+
+  const min = Math.floor(d / 60000); 
+  d -= min * 60000;
+
+  const sec = Math.floor(d / 1000);
+
+  document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+  document.getElementById('cd-hrs').textContent = String(hrs).padStart(2, '0');
+  document.getElementById('cd-min').textContent = String(min).padStart(2, '0');
+  document.getElementById('cd-sec').textContent = String(sec).padStart(2, '0');
+
+  if (targetTime - Date.now() <= 0) {
+    clearInterval(timer);
+  }
+}
+
+updateCD();
+const timer = setInterval(updateCD, 1000);
+
+    // Scroll Reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: .1 });
+    reveals.forEach(el => obs.observe(el));
+
+    // Form
+    function handleSubmit(e) { 
+      e.preventDefault();
+      const btn = e.target.querySelector('.submit-btn');
+      btn.textContent = '✓ REGISTRATION SUBMITTED — CHECK YOUR EMAIL';
+      btn.style.background = 'linear-gradient(135deg,#007a40,#00ff88)';
+      btn.style.color = '#000';
+      btn.disabled = true;
+    }
+  </script>
+</body>
+
+</html>
