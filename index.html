@@ -443,26 +443,22 @@
     // updateCD(); setInterval(updateCD, 1000);
 
     // Set duration (28 days 5 hours 30 minutes 15 seconds)
-const duration =
-  (28 * 24 * 60 * 60 * 1000) +   // 28 days
-  (5 * 60 * 60 * 1000) +         // 5 hours
-  (30 * 60 * 1000) +             // 30 minutes
-  (15 * 1000);                   // 15 seconds
 
-// Set target time once
-const targetTime = Date.now() + duration;
+// Set fixed target date: 25 March 2026 (midnight)
+// Format: Year, Month (0-based), Day, Hours, Minutes, Seconds
+const targetTime = new Date(2026, 2, 25, 0, 0, 0).getTime();
 
 // Countdown
 function updateCD() {
   let d = Math.max(0, targetTime - Date.now());
 
-  const days = Math.floor(d / 86400000); 
+  const days = Math.floor(d / 86400000);
   d -= days * 86400000;
 
-  const hrs = Math.floor(d / 3600000); 
+  const hrs = Math.floor(d / 3600000);
   d -= hrs * 3600000;
 
-  const min = Math.floor(d / 60000); 
+  const min = Math.floor(d / 60000);
   d -= min * 60000;
 
   const sec = Math.floor(d / 1000);
@@ -479,7 +475,7 @@ function updateCD() {
 
 updateCD();
 const timer = setInterval(updateCD, 1000);
-
+    
     // Scroll Reveal
     const reveals = document.querySelectorAll('.reveal');
     const obs = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: .1 });
